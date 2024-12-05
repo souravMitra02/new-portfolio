@@ -73,7 +73,7 @@ body {
     margin-bottom: 1rem;
 }
 
-h1 {
+h2 {
     font-size:54px;
     margin-bottom: 1rem;
 }
@@ -242,15 +242,18 @@ h1 span {
   
   .services h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+
   }
   .services h3{
     color: #f0a500;
+    margin-top: 40px;
+
   }
   .services p {
-    margin-bottom: 2rem;
+    margin-bottom:2rem;
     font-size: 1rem;
     color: #aaa;
+
   }
   
   .service-cards {
@@ -258,7 +261,7 @@ h1 span {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
-  
+ 
   .card {
     background-color: #1e1e1e;
     padding: 1rem;
@@ -364,3 +367,96 @@ h1 span {
   .footer-bottom a:hover {
     color: #fff;
   }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-download {
+        margin-top: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    h2, h1 span {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    /* Specialities Section */
+    .speciality-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Recent Works Section */
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        height: auto;
+    }
+
+    .work-card img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Services Section */
+    .service-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* FAQ Section */
+    .faqs .faq {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer Section */
+    .footer-sections {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 0.5rem 1rem;
+    }
+}
